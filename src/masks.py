@@ -1,6 +1,3 @@
-user_card_number = input()
-user_account_number = input()
-
 
 def get_mask_card_number(user_card_number: str) -> str:
     """Функция, скрывающая номер карты"""
@@ -12,5 +9,3 @@ def get_mask_account(user_account_number: str) -> str:
     return f"*{user_account_number[-4:]}"
 
 
-print(get_mask_card_number(user_card_number))
-print(get_mask_account(user_account_number))
