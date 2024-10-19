@@ -23,6 +23,7 @@ def sort_by_date(list_of_dicts: list[dict[str, Any]], reverse_list: bool = True)
     sorted_list: list[dict[str, Any]] = sorted(list_of_dicts, key=lambda x: x["date"], reverse=reverse_list)
     return sorted_list
 
+
 print(sort_by_date(list_of_dicts))
 
 list_first_func = filter_by_state
