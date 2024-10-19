@@ -1,8 +1,6 @@
 from src.masks import get_mask_account, get_mask_card_number
 
 
-
-
 def mask_accaunt_card(user_card: str) -> str:
     """Функция маскирующая счет/карту"""
     if "Счет" in user_card:
@@ -11,8 +9,6 @@ def mask_accaunt_card(user_card: str) -> str:
     else:
         mask_card_num = f"{user_card[:-15]} {get_mask_card_number(user_card[-16:])}"
         return mask_card_num
-
-
 
 
 def get_date(date_str: str) -> str:
