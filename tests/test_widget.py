@@ -1,6 +1,7 @@
 import pytest
 
-from src.widget import mask_accaunt_card, get_date
+from src.widget import get_date, mask_accaunt_card
+
 
 @pytest.mark.parametrize(
     "value, expected_result",
@@ -9,8 +10,6 @@ from src.widget import mask_accaunt_card, get_date
         ("Счет 73654108430135874305", "Счет *4305"),
     ],
 )
-
-
 def test_mask_accaunt_card(value: str, expected_result: str) -> None:
     assert mask_accaunt_card(value) == expected_result
 
