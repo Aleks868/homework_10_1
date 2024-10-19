@@ -13,7 +13,6 @@ def mask_accaunt_card(user_card: str) -> str:
         mask_card_num = f"{user_card[:-15]} {get_mask_card_number(user_card[-16:])}"
         return mask_card_num
 
-
 print(mask_accaunt_card(user_card))
 
 
@@ -21,6 +20,5 @@ def get_date(date_str: str) -> str:
     """Функция изменения формата даты"""
     date_slice = date_str[0:10].split("-")
     return ".".join(date_slice[::-1])
-
 
 print(get_date(date_str))

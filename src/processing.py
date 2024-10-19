@@ -21,9 +21,7 @@ def sort_by_date(list_of_dicts: list[dict[str, Any]], reverse_list: bool = True)
     """Функция принимает список и сортирует его по убыванию"""
 
     sorted_list: list[dict[str, Any]] = sorted(list_of_dicts, key=lambda x: x["date"], reverse=reverse_list)
-
     return sorted_list
-
 
 print(sort_by_date(list_of_dicts))
 
